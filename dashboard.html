@@ -147,7 +147,7 @@
 
           <!--Form Group-->
           <div class="form-group mb-2">
-            <button id="" class="btn btn-md">Transfer</button>
+            <button id="transact-btn" class="btn btn-md transact-btn">Transfer</button>
           </div>
           <!-- End Of Form Group -->
 
@@ -156,21 +156,10 @@
       </div>
       <!-- End Of Card : transfer Card -->
 
-
       <!-- Card: Deposit Card -->
       <div class="card deposit-card">
         <!-- Card Body -->
         <div class="card-body">
-          
-          <!-- Form Group -->
-          <div class="form-group">
-            <label for=""> Select Account </label>
-            <select name="account_id" class="form-control" id="">
-              <option value="">-- Select Account --</option>
-            </select>
-            <!-- End Select Account Option -->
-          </div>
-          <!-- End Of Form Group -->
 
           <!--Form Group-->
           <div class="form-group mb-2">
@@ -179,9 +168,19 @@
           </div>
           <!-- End Of Form Group -->
 
+          <!-- Form Group -->
+          <div class="form-group">
+            <label for=""> Select Account </label>
+            <select name="account_id" class="form-control" id="">
+              <option value="">-- Select Account --</option>
+            </select>
+            <!-- End Select Account Option -->
+          </div>
+          <!-- End Of Form Group -->
+
           <!--Form Group-->
-          <div class="form-group mb-2">
-            <button id="" class="btn btn-md">Deposit</button>
+          <div class="form-group">
+            <button id="transact-btn" class="btn btn-md transact-btn">Deposit</button>
           </div>
           <!-- End Of Form Group -->
 
@@ -190,12 +189,18 @@
       </div>
       <!-- End Of Card : deposit Card -->
 
-
       <!-- Card: Withdraw Card -->
       <div class="card withdraw-card">
         <!-- Card Body -->
         <div class="card-body">
           
+           <!--Form Group-->
+           <div class="form-group mb-2">
+            <label for=""> Enter Withdraw Amount</label>
+            <input type="text" name="withdraw_amount" class="form-control" placeholder="Enter Withdraw Amount">
+          </div>
+          <!-- End Of Form Group -->
+
           <!-- Form Group -->
           <div class="form-group">
             <label for=""> Select Account </label>
@@ -208,14 +213,7 @@
 
           <!--Form Group-->
           <div class="form-group mb-2">
-            <label for=""> Enter Withdraw Amount</label>
-            <input type="text" name="withdraw_amount" class="form-control" placeholder="Enter Withdraw Amount">
-          </div>
-          <!-- End Of Form Group -->
-
-          <!--Form Group-->
-          <div class="form-group mb-2">
-            <button id="" class="btn btn-md">Withdraw</button>
+            <button id="transact-btn" class="btn btn-md transact-btn">Withdraw</button>
           </div>
           <!-- End Of Form Group -->
 

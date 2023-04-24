@@ -15,12 +15,10 @@
     const depositCard = document.querySelector(".deposit-card");
     const withdrawCard = document.querySelector(".withdraw-card");
 
-
     paymentCard.style.display = "none";
     transferCard.style.display = "none";
     depositCard.style.display = "none";
     withdrawCard.style.display = "none";
-
 
     transactType.addEventListener("change", function () {
       // To check the transaction Type and Display form:
@@ -60,4 +58,7 @@
           depositCard.style.display = "none";
           break;
       }
+      // End Of Check for Transaction Type and Display Form.
+
     });
+    // End Check For Transaction Type Event Listener.
