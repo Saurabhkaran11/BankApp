@@ -20,7 +20,7 @@
     depositCard.style.display = "none";
     withdrawCard.style.display = "none";
 
-    transactType.addEventListener("change", function () {
+    transactType.addEventListener("change", () => {
       // To check the transaction Type and Display form:
       switch (transactType.value) {
 
@@ -31,24 +31,34 @@
         case "payment":
           paymentCard.style.display = "block";
           paymentCard.nextElementSibling.style.display = "none";
+          withdrawCard.style.display = "none";
+          depositCard.style.display = "none";
+          transferCard.style.display = "none";
           break;
 
         case "transfer":
           transferCard.previousElementSibling.style.display = "none";
           transferCard.style.display = "block";
           transferCard.nextElementSibling.style.display = "none";
+          withdrawCard.style.display = "none";
+          depositCard.style.display = "none";
           break;
 
         case "deposit":
           depositCard.previousElementSibling.style.display = "none";
           depositCard.style.display = "block";
           depositCard.nextElementSibling.style.display = "none";
+          withdrawCard.style.display = "none";
+          transferCard.style.display = "none";
           break;
 
           case "withdraw":
             withdrawCard.previousElementSibling.style.display = "none";
             withdrawCard.style.display = "block";
             withdrawCard.nextElementSibling.style.display = "none";
+            depositCard.style.display = "none";
+            paymentCard.style.display = "none";
+            transferCard.style.display = "none";
             break;
 
         default:
